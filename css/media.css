@@ -1,0 +1,304 @@
+@media (max-width: 1600px) {
+  .tour-info__content {
+    padding-left: 10px;
+    grid-column: span 2;
+  }
+
+  .tour-info__add-content {
+    padding-left: 10px;
+  }
+
+  .tour-info__inner {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .tour-info__img-descr {
+    left: 7px;
+  }
+
+  .tours__info-flag {
+    padding: 16px 35px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .footer__inner {
+    gap: 50px;
+  }
+
+  .footer__list {
+    margin-right: 0;
+  }
+
+  .tours__info-list {
+    gap: 22px;
+  }
+  .tours__info-flag {
+    padding: 16px;
+  }
+
+  .tours__info-date,
+  .tours__info-price {
+    font-size: 22px;
+    padding-left: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tour-info__inner {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .tour-program__item-content {
+    padding: 0 15px;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__info-list {
+    gap: 50px;
+  }
+
+  .tours__item-title {
+    bottom: 205px;
+  }
+
+  .tours__item--active .tours__info-list {
+    flex-direction: column;
+    right: 34px;
+  }
+
+  .tours__item--active .tours__info-item + .tours__info-item {
+    display: block;
+  }
+
+  .tours__info-item + .tours__info-item {
+    display: none;
+  }
+
+  .tours__info-list {
+    left: 0;
+    right: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 970px) {
+  .header__title {
+    font-size: 96px;
+  }
+
+  .menu__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 130px 0 70px;
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+  }
+
+  .menu--active .menu__list {
+    transform: translateY(0);
+  }
+
+  .menu__btn {
+    display: flex;
+    z-index: 2;
+  }
+
+  .menu--active .menu__btn span {
+    opacity: 0;
+  }
+
+  .menu--active .menu__btn::before {
+    transform: rotate(45deg);
+    top: 11px;
+  }
+
+  .menu--active .menu__btn::after {
+    transform: rotate(-45deg);
+    bottom: 11px;
+  }
+
+  .menu {
+    order: 1;
+  }
+
+  .tour-program__item-text {
+    font-size: 16px;
+  }
+
+  .tour-program__item svg {
+    width: 120px;
+  }
+
+  .tour-program__item-box::after {
+    font-size: 40px;
+    bottom: 30%;
+  }
+
+  .tour-program__item-box::before {
+    font-size: 26px;
+    top: 33%;
+  }
+}
+
+@media (max-width: 860px) {
+  .tour-info {
+    padding-top: 50px;
+  }
+
+  .tour-info__content {
+    grid-column: span 3;
+  }
+
+  .footer__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer__logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tour-program {
+    padding: 50px 0;
+  }
+
+  .tours {
+    padding: 50px 0;
+  }
+
+  .tours__item {
+    width: 100%;
+    height: 200px;
+    transition: height 0.5s ease;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+  }
+
+  .tours__item.tours__item--active {
+    width: 100%;
+    height: 860px;
+  }
+
+  .tours__img {
+    height: 860px;
+  }
+
+  .tours__list {
+    flex-direction: column;
+  }
+
+  .tours__item-title {
+    bottom: 216px;
+  }
+
+  .tours__info-list {
+    bottom: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tour-info__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tour-info__img {
+    height: 350px;
+  }
+
+  .tour-program__title {
+    margin-bottom: 20px;
+  }
+
+  .tour-program__item {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-program__item:nth-child(even) .tour-program__item-content {
+    order: 0;
+  }
+
+  .slider__buttons {
+    display: none;
+  }
+
+  .swiper-pagination {
+    display: block;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #b6e8ee;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__title {
+    font-size: 62px;
+  }
+
+  .header__info-list {
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  .social {
+    gap: 20px;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__social {
+    justify-content: space-around;
+  }
+
+  .title span {
+    padding: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .header__logo svg {
+    width: 110px;
+  }
+
+  .tour-info__add-title span {
+    padding: 37px 10px 17px 13px;
+  }
+
+  .tour-info__add-text {
+    padding-left: 0;
+  }
+
+  .tour-info__booking {
+    margin-left: 0;
+  }
+
+  .tour-program__item-content {
+    padding: 0;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+
+  .tour-program__item-text {
+    margin-top: -30px;
+  }
+
+  .tours__item.tours__item--active {
+    height: 540px;
+  }
+}
